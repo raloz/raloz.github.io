@@ -2,6 +2,6 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://raloz.github.io/',
+    site: 'https://raloz.github.io',
     base: '/raloz.github.io'
 });
