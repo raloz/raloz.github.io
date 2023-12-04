@@ -23,9 +23,9 @@ const social = [
   },
 ];
 ---
-<header>
-  <nav class="max-w-screen-sm m-auto flex justify-end items-center">
-    <ul>
+<header class="bg-gray-50 w-full mb-10 h-20">
+  <nav class="max-w-screen-sm h-full m-auto flex justify-end items-center">
+    <ul class="h-9">
       {
         social.map((el, index) => (
           <li class={`inline-block pr-3 hover:opacity-70 ${index === social.length -1 && "max-sm:pr-7"}`}>
@@ -45,18 +45,3 @@ const social = [
     </ul>
   </nav>
 </header>
-
-<style>
-  header {
-    background-color: #f8f8f8;
-    height: 75px;
-    margin-bottom: 65px;
-    width: 100%;
-  }
-  nav {
-    height: 100%;
-  }
-  ul{
-    height: 38px;
-  }
-</style>
