@@ -1,19 +1,28 @@
 ---
-import { BASE_URL } from "../constants";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Resume from "../components/Resume.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <a href=`${BASE_URL}/`>Home</a>
-    <a href=`${BASE_URL}/about`>About</a>
-    {BASE_URL}
-    <h1>My Astro Site</h1>
-  </body>
-</html>
+<BaseLayout pageTitle="Home Page">
+  <h1>
+    <span class="font-extrabold text-7xl block max-sm:pl-8">Hi there 👋🏽</span>
+    <span class="font-regular mb-7 block max-sm:pl-9">
+      <span class="text-4xl block">I'm Octavio Quiroz</span>
+      <span class="text-1xl text-zinc-500 pl-10 block"
+        >NetSuite SR Developer 🧑🏽‍💻</span
+      >
+    </span>
+  </h1>
+
+  <p class="text-lg mb-5 p-5">
+    I've <sup>+</sup>4 years experience as NetSuite Developer, I worked in a different kind
+    of projects usign the NetSuite tools to create better solutions.
+  </p>
+  <Resume />
+</BaseLayout>
+
+<style>
+  h1 {
+    font-family: "Geist";
+  }
+</style>

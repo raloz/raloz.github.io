@@ -1,0 +1,31 @@
+---
+import Header from "../components/Header.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>Octavio Quiroz</title>
+  </head>
+  <body>
+    <Header />
+    <div id="main" class="max-w-screen-sm">
+      <slot />
+    </div>
+  </body>
+</html>
+
+<style>
+  @font-face {
+    font-family: "Geist";
+    src: url("/fonts/Geist/GeistVariableVF.woff2") format("woff2-variations");
+    font-weight: 100 1000;
+  }
+  #main {
+    margin: 0 auto;
+  }
+</style>

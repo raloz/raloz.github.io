@@ -8,11 +8,13 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prettier": "./node_modules/prettier/bin/prettier.cjs --write src/pages/. --plugin=prettier-plugin-astro"
+    "prettier": "./node_modules/prettier/bin/prettier.cjs --write src/. --plugin=prettier-plugin-astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
+    "@astrojs/tailwind": "^5.0.2",
     "astro": "^3.6.4",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5.3.2"
   },
   "devDependencies": {
