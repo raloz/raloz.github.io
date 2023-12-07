@@ -4,22 +4,26 @@ import Resume from "../components/Resume.astro";
 ---
 
 <BaseLayout pageTitle="Home Page">
-  <h1>
-    <span class="font-extrabold text-7xl block max-sm:pl-7">Hi there 👋🏽</span>
+  <h1 class="px-10">
+    <span class="font-extrabold text-gray-900 text-7xl block">Hi there 👋🏽</span>
     <span class="font-regular mb-7 block max-sm:pl-9">
-      <span class="text-4xl block">I'm Octavio Quiroz</span>
-      <span class="text-1xl text-zinc-500 pl-10 block">
-        NetSuite SR Developer 🧑🏽‍💻
+      <span class="text-4xl block text-gray-700">I'm Octavio Quiroz</span>
+      <span class="text-lg text-gray-500 pl-10 block">
+        NetSuite SR Developer <span class="text-2xl">🧑🏽‍💻</span> 
       </span>
     </span>
   </h1>
 
-  <p class="text-lg mb-5 pr-7 max-sm:px-7">
-    I've <sup>+</sup>4 years experience as NetSuite Developer, I worked in a
-    different kind of projects usign the NetSuite tools to create better
-    solutions, I had create inside NetSuite solutions and also NetSuite
-    integrations with some third party applications as Shopify and others.
-  </p>
-
+  <div class="px-10 max-sm:px-7">
+    <p class="text-2xl mb-3">
+      4<sup>+</sup> years of experience as a Netsuite Deveveloper.
+    </p>
+    <p class="text-lg mb-5 text-gray-600">
+      My approach revolves around providing smart and efficient solutions to
+      challenges, ensuring the success and optimization of processes.
+    </p>
+  </div>
+  
   <Resume />
+
 </BaseLayout>
