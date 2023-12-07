@@ -1,29 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Resume from "../components/Resume.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <BaseLayout pageTitle="Home Page">
-  <h1 class="px-10 max-sm:px-4">
-    <span class="font-extrabold text-gray-900 text-7xl max-sm:text-6xl max-sm:text-center block">Hi there 👋🏽</span>
-    <span class="font-regular mb-7 max-sm:text-center block">
-      <span class="text-4xl max-sm:text-3xl block text-gray-700">I'm Octavio Quiroz</span>
-      <span class="text-lg text-gray-500 pl-10 max-sm:pl-0 block">
-        NetSuite SR Developer <span class="text-2xl">🧑🏽‍💻</span> 
-      </span>
-    </span>
-  </h1>
-
-  <div class="px-10 max-sm:px-4">
-    <p class="text-2xl mb-3">
-      4<sup>+</sup> years of experience as a Netsuite Deveveloper.
-    </p>
-    <p class="text-lg mb-5 text-gray-600">
-      My approach revolves around providing smart and efficient solutions to
-      challenges, ensuring the success and optimization of processes.
-    </p>
-  </div>
-  
-  <Resume />
-
+  <Hero />
 </BaseLayout>
