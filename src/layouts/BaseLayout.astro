@@ -21,9 +21,9 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <Header />
-    <div id="main" class="max-w-screen-sm m-auto mb-3">
+    <main class="max-w-screen-sm m-auto mb-3">
       <slot />
-    </div>
+    </main>
   </body>
 </html>
 
@@ -33,7 +33,7 @@ const { pageTitle } = Astro.props;
     src: url("/fonts/Geist/GeistVariableVF.woff2") format("woff2-variations");
     font-weight: 100 1000;
   }
-  #main {
-    font-family: "Geist";
+  main {
+    font-family: "Geist", system-ui, sans-serif;
   }
 </style>
